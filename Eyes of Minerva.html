@@ -81,8 +81,8 @@ relative until a given offset position is met in the viewport - then it "sticks"
 }
 
 .text_at_right_image{
-  margin-left:  500px;
-  margin-right: 500px;
+  margin-left:  10%;
+  margin-right: 10%;
   margin-top: -50px;
   text-align:justify;
 }
@@ -101,8 +101,15 @@ relative until a given offset position is met in the viewport - then it "sticks"
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
-    width: 1000px;
-    height: 780px;/* heigth q se le da a la imagen, si es mas peque;a el texto se escribe por encima */
+    margin-bottom: 80px;
+    height: auto;/* heigth q se le da a la imagen, si es mas peque;a el texto se escribe por encima */
+    display: flex;
+    justify-content: center;
+}
+.image_column img
+{
+  width: auto;
+  height: 400px;
 }
 
 .button {
@@ -155,7 +162,7 @@ relative until a given offset position is met in the viewport - then it "sticks"
 <div class = "in_middle title_font"> <h1>Eyes of Minerva</h1> </div>
   
   <div class = "image_column">
-    <img src="Img/Eyes of Minerva.png" alt="Eyes of Minerva" style="width:100%">
+    <img src="Img/Eyes of Minerva.png" alt="Eyes of Minerva" >
   </div>
 
   <div class = "text_at_right_image">

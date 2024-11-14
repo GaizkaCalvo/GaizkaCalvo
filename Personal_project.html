@@ -81,12 +81,14 @@ relative until a given offset position is met in the viewport - then it "sticks"
   text-align: center;
 }
 
+
 .text_at_right_image{
-  margin-left:  940px;
-  margin-right: 500px;
+  margin-left:  10%;
+  margin-right: 10%;
   margin-top: -50px;
   text-align:justify;
 }
+
 .title{
   font-size: 35px;
   text-align:center;
@@ -102,10 +104,26 @@ relative until a given offset position is met in the viewport - then it "sticks"
 
 
 .image_column {
-    margin-top: 80px;
-    margin-left: 500px;
-    width: 400px;
-    height: 0px;/* heigth q se le da a la imagen, si es mas peque;a el texto se escribe por encima */
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    height: auto;/* heigth q se le da a la imagen, si es mas peque;a el texto se escribe por encima */
+    display: flex;
+    justify-content: center;
+}
+.image_column img
+{
+  width: 400px;
+  height: auto;
+}
+.juego-presentacion
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .button {
@@ -157,8 +175,9 @@ relative until a given offset position is met in the viewport - then it "sticks"
 <div class = "main">
 <div class = "in_middle title"> <h1>Personal projects</h1> </div>
   
+<div class="juego-presentacion">
   <div class = "image_column">
-    <img src="Img/cs300.png" alt="Computer grapichs framework" style="width:100%">
+    <img src="Img/cs300.png" alt="Computer grapichs framework" >
   </div>
 
   <div class = "text_at_right_image">
@@ -175,11 +194,13 @@ relative until a given offset position is met in the viewport - then it "sticks"
       <a href="Computer_graphics.html" class="button separation1"  >See more</a> 
     </div>
   </div>
+</div>
 
-  <br><br><br><br><br><br>
+  <br><br>
 
+<div class="juego-presentacion">
   <div class = "image_column">
-    <img src="Img/cs350.png" alt="Space partitioning framework" style="width:100%">
+    <img src="Img/cs350.png" alt="Space partitioning framework" >
   </div>
 
   <div class = "text_at_right_image">
@@ -194,11 +215,13 @@ relative until a given offset position is met in the viewport - then it "sticks"
       <a href="Space_partitioning_framework.html" class="button separation1"  >See more</a> 
     </div>
   </div>
+</div>
 
-    <br><br><br><br><br>
+    <br><br>
 
+<div class="juego-presentacion">
   <div class = "image_column">
-    <img src="Img/NEURAL NETWORK.png" alt="Neural network" style="width:100%">
+    <img src="Img/NEURAL NETWORK.png" alt="Neural network" >
   </div>
 
   <div class = "text_at_right_image">
@@ -213,8 +236,9 @@ relative until a given offset position is met in the viewport - then it "sticks"
       <a href="Neural_network.html" class="button separation1"  >See more</a> 
     </div>
   </div>
+</div>
   
-  <br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br>
   
 </div>
 

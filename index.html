@@ -98,26 +98,24 @@ relative until a given offset position is met in the viewport - then it "sticks"
   background: #ddd;
 }
 
-.Experience{
-  line-height: 10px;
-}
-
 .image_row {
   display: flex;
+  align-items: center;
 }
 
-.image_column {
-  flex: 60%;
-  padding: 5px;
-}
-.image_column_2 {
-  flex: 33.33%;
-  padding: 5px;
+.image_column {   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
 }
 
-.image_column_3{
-  flex: 68.00%;
-  padding: 5px;
+.image_column img
+{
+  width: auto;
+  height: 150px;
+  padding: 10px;
 }
 
 .button {
@@ -246,9 +244,10 @@ ul li {
 
     <!-- EXPERIENCE TEXT -->
     <h2>Experience</h2>
-    <div class = "Experience">
-      <p><b> &nbsp; &nbsp; &nbsp;  DigiPen Math Grader </b> &nbsp; (09/2020 - 12/2020) </p>
-      <p> &nbsp; &nbsp; &nbsp;  In charge of correcting homework about discrete mathematics.</p>
+
+    <div >
+      <p><b>  DigiPen Math Grader </b> (09/2020 - 12/2020) </p>
+      <p> In charge of correcting homework about discrete mathematics.</p>
     </div>
       
 
@@ -269,57 +268,45 @@ ul li {
   <div class="main">
     <!-- GAMES -->
     <h1>GAMES </h1>
-      <h5>Game projects where I took part on. </h5>
+      <h4>Game projects where I took part on. </h4>
+      
       <div class="image_row">
         <div class="image_column">
-          <img src="Img/Toy Tank!.jpg" alt="Toy Tank!" style="width:80%">
-        </div>
-        <div class="image_column_2">
-          <img src="Img/StrawssBerry.jpg" alt="StrawssBerry" style="width:60%">
+          <img src="Img/Toy Tank!.jpg" alt="Toy Tank!">
+          <a href="Toy Tank!.html" class="button"  >Toy Tank!</a> 
         </div>
         <div class="image_column">
-          <img src="Img/Eyes of Minerva.png" alt="Eyes of Minerva" style="width:65%">
+          <img src="Img/StrawssBerry.jpg" alt="StrawssBerry">
+          <a href="StrawssBerry.html" class="button"  >StrawssBerry</a>
         </div>
+        <div class="image_column">
+          <img src="Img/Eyes of Minerva.png" alt="Eyes of Minerva">
+          <a href="Eyes of Minerva.html" class="button"  >Eyes of Minerva</a>
+        </div>
+
       </div>
-
-      <a href="Toy Tank!.html" class="button separation1"  >Toy Tank!</a> 
-      <a href="StrawssBerry.html" class="button separation2"  >StrawssBerry</a>
-      <a href="Eyes of Minerva.html" class="button separation3"  >Eyes of Minerva</a>
-
-      <br>
-      <br>
-      <br>
-
-      <p>Click into the buttons for more information of the game or view them with a short descriptions selecting <b> Games </b> in the navbar. </p>
-      <br>
       
     <!-- PERSONAL PROJECTS -->
     <h1>PERSONAL PROJECTS</h1>
-      <h5>Some personal projects that I made during my degree.</h5>
+      <h4>Some personal projects that I made during my degree.</h4  >
       
       <div class="image_row">
+
         <div class="image_column">
-          <img src="Img/cs300.png" alt="Computer grapichs framework" style="width:75%">
-        </div>
-        <div class="image_column_3">
-          <img src="Img/cs350.png" alt="Space partitioning framework" style="width:79%">
+          <img src="Img/cs300.png" alt="Computer grapichs framework">
+          <a href="Computer_graphics.html" class="button"  >Computer Graphics</a> 
         </div>
         <div class="image_column">
-          <img src="Img/NEURAL NETWORK.png" alt="Neural network" style="width:68%">
+          <img src="Img/cs350.png" alt="Space partitioning framework">
+          <a href="Space_partitioning_framework.html" class="button"  >Space Partitioning</a>
         </div>
+        <div class="image_column">
+          <img src="Img/NEURAL NETWORK.png" alt="Neural network">
+          <a href="Neural_network.html" class="button"  >Neural Network</a>
+        </div>
+
       </div>
 
-
-      <a href="Computer_graphics.html" class="button separation_cs300"  >Computer Graphics</a> 
-      <a href="Space_partitioning_framework.html" class="button separation_cs350"  >Space Partitioning</a>
-      <a href="Neural_network.html" class="button separation_NN"  >Neural Network</a>
-
-      <br>
-      <br>
-      <br>
-
-      <p>Click into the buttons for more information of the project or view them with a short descriptions selecting <b> Personal projects </b> in the navbar. </p>
-      <br>
   </div>
 
 </div>

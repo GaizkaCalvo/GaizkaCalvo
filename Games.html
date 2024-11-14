@@ -74,6 +74,8 @@ relative until a given offset position is met in the viewport - then it "sticks"
 /* Main column */
 .main {   
   background-color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .in_middle{
@@ -81,11 +83,12 @@ relative until a given offset position is met in the viewport - then it "sticks"
 }
 
 .text_at_right_image{
-  margin-left:  940px;
-  margin-right: 500px;
+  margin-left:  10%;
+  margin-right: 10%;
   margin-top: -50px;
   text-align:justify;
 }
+
 
 .title_font{
   font-size: 35px;
@@ -99,12 +102,28 @@ relative until a given offset position is met in the viewport - then it "sticks"
   font-size: 18px;
 }
 
-
 .image_column {
-    margin-top: 80px;
-    margin-left: 500px;
-    width: 400px;
-    height: 00px;/* heigth q se le da a la imagen, si es mas peque;a el texto se escribe por encima */
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    height: auto;/* heigth q se le da a la imagen, si es mas peque;a el texto se escribe por encima */
+    display: flex;
+    justify-content: center;
+}
+.image_column img
+{
+  width: 400px;
+  height: auto;
+}
+
+.juego-presentacion
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .button {
@@ -155,9 +174,10 @@ relative until a given offset position is met in the viewport - then it "sticks"
 
 <div class = "main">
 <div class = "in_middle title_font"> <h1>Games</h1> </div>
-  
+
+<div class="juego-presentacion">
   <div class = "image_column">
-    <img src="Img/StrawssBerry.jpg" alt="StrawssBerry" style="width:100%">
+    <img src="Img/StrawssBerry.jpg" alt="StrawssBerry">
   </div>
 
   <div class = "text_at_right_image">
@@ -176,52 +196,56 @@ relative until a given offset position is met in the viewport - then it "sticks"
       <a href="StrawssBerry.html" class="button separation1"  >See more</a> 
     </div>
   </div>
+</div>
 
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br>
 
-  <div class = "image_column">
-    <img src="Img/Toy Tank!.jpg" alt="Toy Tank!" style="width:100%">
-  </div>
+  <div class="juego-presentacion">
+   <div class = "image_column">
+      <img src="Img/Toy Tank!.jpg" alt="Toy Tank!" >
+   </div>
 
-  <div class = "text_at_right_image">
+    <div class = "text_at_right_image">
     <div class = "title_font"><h2>Toy Tank!</h2></div>
-    <div class = "year_font">
-      <p>SEP 2019 - MAY 2020</p>
+      <div class = "year_font">
+        <p>SEP 2019 - MAY 2020</p>
+      </div>
+      <div class = "description_font">
+       <p>
+         ToyTank is a 3D action platformer where you have to go from point A to
+         point B using your tank skills... You must go through all the different
+         levels and escape from the room.
+       </p>
+
+        <a href="Toy Tank!.html" class="button separation1"  >See more</a> 
+      </div>
     </div>
-    <div class = "description_font">
-      <p>
-        ToyTank is a 3D action platformer where you have to go from point A to
-        point B using your tank skills... You must go through all the different
-        levels and escape from the room.
-      </p>
+  </div>
+
+    <br><br>
+
+  <div class="juego-presentacion">
+    <div class = "image_column">
+     <img src="Img/Eyes of Minerva.png" alt="Eyes of Minerva" >
+   </div>
+
+   <div class = "text_at_right_image">
+     <div class = "title_font"><h2>Eyes of Minerva</h2></div>
+     <div class = "year_font">
+       <p>SEP 2020 - MAY 2021</p>
+     </div>
+     <div class = "description_font">
+        <p>
+          Eyes of Minerva is a stealth first person puzzle game, where the player will
+         traverse a maze of rooms riddled with enemies looking to eliminate the player.
+         The players will have to use all the tools at their disposal to either distract
+         or disable the enemies
+       </p>
       
-      <a href="Toy Tank!.html" class="button separation1"  >See more</a> 
+       <a href="Eyes of Minerva.html" class="button separation1"  >See more</a> 
+     </div>
     </div>
   </div>
-
-    <br><br><br><br><br>
-
-  <div class = "image_column">
-    <img src="Img/Eyes of Minerva.png" alt="Eyes of Minerva" style="width:100%">
-  </div>
-
-  <div class = "text_at_right_image">
-    <div class = "title_font"><h2>Eyes of Minerva</h2></div>
-    <div class = "year_font">
-      <p>SEP 2020 - MAY 2021</p>
-    </div>
-    <div class = "description_font">
-      <p>
-        Eyes of Minerva is a stealth first person puzzle game, where the player will
-        traverse a maze of rooms riddled with enemies looking to eliminate the player.
-        The players will have to use all the tools at their disposal to either distract
-        or disable the enemies
-      </p>
-      
-      <a href="Eyes of Minerva.html" class="button separation1"  >See more</a> 
-    </div>
-  </div>
-  
   <br><br><br><br>
   
 </div>
