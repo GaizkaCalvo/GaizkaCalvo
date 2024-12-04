@@ -3,4 +3,4 @@ Allow: /
 Disallow: /Data/
 Disallow: /Videos/
 
-Sitemap: https://gaizkacalvo.github.io/gaizka_calvo/sitemap.xml
+Sitemap: https://gaizkacalvo.github.io/sitemap.xml
